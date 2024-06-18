@@ -26,16 +26,36 @@
 
 int main(int argc, char **argv)
 {
-	int a,b,c,n;
-	scanf("%d%d%d", &a, &b, &c);
-	if (a>b) n=a;
-	else n=b;
 	
-	if (c>n) n=c;
 	
-	printf("%d", n);
+	int a;
+	scanf("%d", &a);
 	
-
+	switch(a){
+		case 1:
+		case 2:
+		case 12:
+			printf("winter");
+			break;
+		case 3:
+		case 4:
+		case 5:
+			printf("spring");
+			break;
+		case 6:
+		case 7:
+		case 8:
+			printf("summer");
+			break;
+		case 9:
+		case 10:
+		case 11:
+			printf("autumn");
+			break;
+	}
+	
+	
+	
 	return 0;
 }
 

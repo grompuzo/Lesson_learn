@@ -26,16 +26,17 @@
 
 int main(int argc, char **argv)
 {
-	int a,b,c,n;
-	scanf("%d%d%d", &a, &b, &c);
-	if (a>b) n=a;
-	else n=b;
 	
-	if (c>n) n=c;
+	float k, b;
+	float x1,y1,x2,y2; //6 9 -1 3 //0.86 3.86
+	scanf("%f%f%f%f", &x1, &y1, &x2, &y2); //y=k*x+b 
 	
-	printf("%d", n);
+	k=(y1-y2)/(x1-x2);
+	b=y2-k*x2;
 	
-
+	printf("%.2f\n", k);
+	printf("%.2f", b);
+	
 	return 0;
 }
 

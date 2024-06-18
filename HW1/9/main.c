@@ -26,15 +26,15 @@
 
 int main(int argc, char **argv)
 {
-	int a,b,c,n;
-	scanf("%d%d%d", &a, &b, &c);
-	if (a>b) n=a;
-	else n=b;
-	
+	int a,b,c,d,e,n;
+	scanf("%d%d%d%d%d", &a, &b, &c, &d, &e);
+
+	n=a;
+	if (b>n) n=b;
 	if (c>n) n=c;
-	
+	if (d>n) n=d;
+	if (e>n) n=e;
 	printf("%d", n);
-	
 
 	return 0;
 }

@@ -26,16 +26,12 @@
 
 int main(int argc, char **argv)
 {
-	int a,b,c,n;
-	scanf("%d%d%d", &a, &b, &c);
-	if (a>b) n=a;
-	else n=b;
 	
-	if (c>n) n=c;
 	
-	printf("%d", n);
+	int a;
+	scanf("%d", &a);
+	printf("%d",a/100+(a/10)%10+a%10);
 	
-
 	return 0;
 }
 

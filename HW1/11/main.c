@@ -26,16 +26,21 @@
 
 int main(int argc, char **argv)
 {
-	int a,b,c,n;
-	scanf("%d%d%d", &a, &b, &c);
-	if (a>b) n=a;
-	else n=b;
 	
-	if (c>n) n=c;
 	
-	printf("%d", n);
-	
+	int m[5];
+	int min,max,i;
+	scanf("%d%d%d%d%d", &m[0], &m[1], &m[2], &m[3], &m[4]);
 
+	min=max=m[0];
+	for(i=1; i<5; i++){
+		if (m[i]<min) min=m[i];
+		if (m[i]>max) max=m[i];
+		}
+	
+	
+	printf("%d",min+max);
+	
 	return 0;
 }
 
