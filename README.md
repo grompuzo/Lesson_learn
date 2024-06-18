@@ -1,3 +1,3 @@
-"# Lesson_learn" 
-"# Lesson_learn" 
-"# Lesson_learn" 
+Ермилов Глеб 
+HW1-задачи,по С 
+HW2-задачи, алгебры логики
