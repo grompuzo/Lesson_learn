@@ -1,47 +1,16 @@
-/*
- * main.c
- * 
- * Copyright 2024 glebe <glebe@LAPTOP-EDTA0PHJ>
- * 
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- * 
- * 
- */
-
 #include <stdio.h>
-
-int power(n, p)
-{
-	if (p>1)    n= n * power(n,p-1);
-	if (p == 1) return n;
-	if (p == 0) return 1;
-	
-	return n;
-}
+#include <unistd.h>
 
 
+int main(void){
 
-int main(int argc, char **argv)
-{
-	int n,p;
-	scanf("%d%d", &n, &p);
+    float a[5] ={0};
+    for(int i=0; i<5; i++){
+        scanf("%f",&a[i]); // ввод массива
+    }
 
-	printf("%d", power(n,p));
-	
-	
-	return 0;
+    printf("%.3f",(a[0]+a[1]+a[2]+a[3]+a[4])/5);
+
+    return 0;
 }
 
